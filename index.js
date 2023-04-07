@@ -24,7 +24,6 @@ function copyLink(event) {
   let data = JSON.parse(localStorage.getItem("myLeads"));
   let link = data[parseInt(copyLinkPosition)];
   navigator.clipboard.writeText(link);
-  //change button text to copied do some animation
 
   const button = event.target;
   button.textContent = "Copied!";
